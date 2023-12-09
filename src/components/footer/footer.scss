@@ -1,0 +1,86 @@
+@import "../../css-config/mixins.scss";
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 40vh;
+    .magic_spoon{
+        width: 50%;
+        border: 2px solid ;
+        padding: 0 10%;
+        .heading{
+            h1{
+                font-size: 3.5rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                color: white;
+            }
+        }
+        .flinks{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin: 0.1rem 1rem;
+                color: white;
+            }
+        }
+        .Contact_container{
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+
+            .cta_contact{
+                padding: 0.8rem 2rem;
+                background-color: transparent;
+                border-radius: 1.5rem;
+                cursor: pointer;
+                border: 2px solid white;
+                color: white;
+                &:hover {
+                        background-color: white;
+                        color: pink;
+                    }
+            }
+            .icons{
+                svg{
+                    margin: 0.2rem 1rem;
+                    font-size: 1.8rem;
+                    color: white;
+                }
+            }
+        }
+        .para{
+            margin-top: 0.6rem;
+            color: grey;
+        }
+    }
+    .subscribe_box{
+        color: white;
+        width: 50%;
+        h1{
+            font-size: 1.4rem;
+        }
+        .subscrib{
+            input{
+                padding: 0.9rem 2rem;
+                margin-top: 0.5rem;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 3rem;
+                margin-right: 2rem;
+                color: white;
+                &::placeholder{
+                    font-size: 1.5rem;
+                }
+            }
+            .cta_subscribe{
+                padding: 0.9rem 2.5rem;
+                background-color: transparent;
+                border: 2px solid white;
+                color: white;
+                border-radius: 3rem;
+            }
+        }
+    }
+}
