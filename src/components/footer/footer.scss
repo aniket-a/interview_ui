@@ -1,86 +1,95 @@
 @import "../../css-config/mixins.scss";
 
-.footer{
-    display: flex;
-    width: 100%;
+footer{
     background-color: black;
-    height: 40vh;
-    .magic_spoon{
-        width: 50%;
-        border: 2px solid ;
-        padding: 0 10%;
-        .heading{
-            h1{
-                font-size: 3.5rem;
-                font-weight: 600;
-                margin-bottom: 0.5rem;
-                color: white;
-            }
-        }
-        .flinks{
-            display: flex;
-            flex-wrap: wrap;
-            li{
-                margin: 0.1rem 1rem;
-                color: white;
-            }
-        }
-        .Contact_container{
-            margin-top: 1rem;
-            display: flex;
-            align-items: center;
-
-            .cta_contact{
-                padding: 0.8rem 2rem;
-                background-color: transparent;
-                border-radius: 1.5rem;
-                cursor: pointer;
-                border: 2px solid white;
-                color: white;
-                &:hover {
-                        background-color: white;
-                        color: pink;
+    position: relative;
+    z-index: 1000;
+    padding-bottom: 5rem;
+    .footer_container{
+        max-width: 1050px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+        // border: 2px solid white;
+        .left {
+                width: 50%;
+                border: 2px solid;
+        
+                .logo {
+                    svg{
+                        margin-bottom: 1rem;
+                        width: 25rem;
                     }
+                }
+        
+                .links {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    max-width: 400px;
+        
+                    ul {
+                        margin-bottom: 1rem;
+                        
+                        li {
+                            color: white;
+                            margin: 0rem 0.5rem;
+                            font-size: 0.7rem;
+                            line-height: 0.1rem;
+                        }
+                    }
+                }
+                .contact_us{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    .cta_contact{
+                        padding: 1rem 2.5rem;
+                        border-radius: 3rem;
+                    }
+                    svg{
+                        color: white;
+                        font-size: 2.2rem;
+                        margin: 0 1rem;
+                    }
+                }
+                .p{
+                    color: grey;
+                    margin-top: 1rem;
+                }
             }
-            .icons{
-                svg{
-                    margin: 0.2rem 1rem;
-                    font-size: 1.8rem;
+        
+            .right {
+                width: 50%;
+                margin-left: 10rem;
+                h3{
                     color: white;
+                    font-size: 1rem;
+                    padding: 0.2rem ;
+                    margin-bottom: 0.5rem;
+                }
+                input{
+                    background-color: transparent;
+                    border: 2px solid white;
+                    padding: 0.9rem 1rem;
+                    border-radius: 3rem;
+                    margin-right: 1rem;
+                    &::placeholder{
+                        color: white;
+                        font-size: 1.3rem;
+                    }
+                }
+                .cta_subscribe{
+                    padding: 0.9rem 1rem;
+                    background-color: transparent;
+                    color: white;
+                    border: 2px solid white;
+                    border-radius: 3rem;
+                    font-weight: 550;
                 }
             }
-        }
-        .para{
-            margin-top: 0.6rem;
-            color: grey;
-        }
     }
-    .subscribe_box{
-        color: white;
-        width: 50%;
-        h1{
-            font-size: 1.4rem;
-        }
-        .subscrib{
-            input{
-                padding: 0.9rem 2rem;
-                margin-top: 0.5rem;
-                background-color: transparent;
-                border: 2px solid white;
-                border-radius: 3rem;
-                margin-right: 2rem;
-                color: white;
-                &::placeholder{
-                    font-size: 1.5rem;
-                }
-            }
-            .cta_subscribe{
-                padding: 0.9rem 2.5rem;
-                background-color: transparent;
-                border: 2px solid white;
-                color: white;
-                border-radius: 3rem;
-            }
-        }
-    }
+    
 }

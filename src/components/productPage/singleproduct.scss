@@ -1,0 +1,33 @@
+.card{
+    width: 180px;
+    margin:0rem 0.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    position: relative;
+    .img{
+        img{
+            width: 100%;
+        }
+        .offericone{
+            width: 40px;
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+        }
+    }
+
+    .cta_add{
+        color: #fff;
+        background: #3f0791;
+        box-shadow: none;
+        padding: 0.7rem 50px;
+        border-radius: 3rem;
+        outline: none;
+        border: none;
+        margin: 0.5rem 0;
+        cursor: pointer;
+    }
+}

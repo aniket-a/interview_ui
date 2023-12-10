@@ -1,0 +1,31 @@
+.offer_box {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: multicolor 5s  infinite;
+    ul{
+        height: 1.3rem;
+        overflow: hidden;
+        li{
+            width: 100%;
+            font-size: 1.3rem;
+            margin: 0.5rem 0;
+            animation: liftup 5s infinite;
+        }
+    }
+}
+
+@keyframes multicolor {
+    0% {background-color: #D50AAD;}
+    25% {background-color: #9D06CB;}
+    75% {background-color: #9505CF;}
+    100% {background-color: #7B03DD;}
+}
+
+@keyframes liftup {
+    0%{transform: translateY(0%);}
+    100% {transform: translateY(-160%);}
+}

@@ -1,0 +1,69 @@
+{
+    "productListing": [
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS-BYO-Fruity-_2x_2_96db5083-4dce-4ac4-b783-66d9c025d639-395063_250x300.png?v=1667355752&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net/files/MAGIC_SPOON_BYO_BOWL_FRUITY_2x_0e28e0e3-0827-4859-abc5-6ae78ee9a493_500x600.png?v=1614313795&amp;auto=format,compress",
+            "name": "Fruity",
+            "background":"#FBA2E6",
+            "offerIcone":"https://magicspoon.imgix.net/t/534/assets/MS_BYO_bestseller.svg?v=113859741247517319241695836137&amp;auto=format,compress"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS-BYO-Cocoa-111821_2x_1_aaa66ff2-b559-42cd-b419-091e4fe63e6e-341389_250x300.png?v=1654074320&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net/files/MAGIC_SPOON_BYO_BOWL_COCOA_2x_2312bfae-7f70-460f-bf2d-486d0b731188_500x600.png?v=1614313795&amp;auto=format,compress",
+            "name": "COCOA",
+            "background":"#E0AC8E",
+            "offerIcone":"https://magicspoon.imgix.net/t/534/assets/MS_BYO_bestseller.svg?v=113859741247517319241695836137&amp;auto=format,compress"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS-BYO-Sugar-Cookie_2-394258_250x300.png?v=1669432514&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net//magicspoon.imgix.net/files/MS_SUGAR-COOKIE_BOWL_46a9a814-75cb-4eff-a2b2-df845fb5f231_500x600.png?v=1701708577&amp;auto=format,compress&amp;auto=format,compress",
+            "name": "SUGAR COOKIE",
+            "background":"#6CEEF8",
+            "offerIcone":"https://magicspoon.imgix.net/t/534/assets/MS_BYO_limited_edition.svg?v=124538425240854113921695836137&amp;auto=format,compress"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS-BYO-Cinnamon-Roll_2x_476f9cfe-37b0-470a-a36f-eb4ca790b164-725033_250x300.png?v=1651608528&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net/files/MAGIC_SPOON_BYO_BOWL_CINNAMON_2x_ecba2499-45bd-4d40-b635-d447e51a0688_500x600.png?v=1614313795&amp;auto=format,compress",
+            "name": "CINNAMON ROLL",
+            "background":"#C4FAF1"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS-BYO-Peanut-Butter-111821_2x_403da983-0759-40ba-a5dd-adb6aa34d5c8-992791_250x300.png?v=1654074322&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net/files/MAGIC_SPOON_BYO_BOWL_PEANUT_2x_dee0da89-cf51-4d1e-8346-2a7ba2e5700a_500x600.png?v=1614313795&amp;auto=format,compress",
+            "name": "PEANUT BUTTER",
+            "background":"#FEDEAC"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS-BYO-Birthday_2x_28d979ed-b445-4592-826b-2ec51400f6e1-552121_250x300.png?v=1650471836&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net/files/MS-BYO-Bowl-Birthday-Cake_2x_a7ad9512-f0b8-4064-a97c-923dd493af68_500x600.png?v=1618261408&amp;auto=format,compress",
+            "name": "BIRTHDAY CAKE",
+            "background":"#00F6E8",
+            "offerIcone":"https://magicspoon.imgix.net/t/534/assets/MS_BYO_new.svg?v=72975774865251634091695836138&amp;auto=format,compress"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/HONEYNUT-BYO-FRONT-AV072301-117657_250x300.png?v=1694078391&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net/files/MS-BYO-Bowl-Honey-Nut_2x_f115b69a-43de-4ada-ae01-76c8d95de6db_500x600.png?v=1694031245&amp;auto=format,compress",
+            "name": "HONEY NUT",
+            "background":"#FFFF52",
+            "offerIcone":"https://magicspoon.imgix.net/t/534/assets/MS_BYO_new.svg?v=72975774865251634091695836138&amp;auto=format,compress"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS-BYO-Frosted-111821_2x_1_d1d98056-8f8a-4b18-8fe1-6b72eec2fbfa-624921_250x300.png?v=1654074322&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net/files/MAGIC_SPOON_BYO_BOWL_FROSTED_2x_3bad7ae4-7175-4995-8fbf-b853f113f256_500x600.png?v=1614313795&amp;auto=format,compress",
+            "name": "FROSTED",
+            "background":"#F6EE79"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS-BYO-Blueberry-Muffin_2x_695c4d92-cb74-4448-a4d9-e337cdab21cc-125419_250x300.png?v=1652214228&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net//magicspoon.imgix.net/files/MAGIC_SPOON_BYO_BOWL_BLUEBERRY_2x_b152c8fe-8538-4291-9c8e-5be751b15dbc_500x600.png?v=1614313795&amp;auto=format,compress&amp;auto=format,compress",
+            "name": "BLUEBERRY MUFFIN",
+            "background":"#9DCFFB"
+        },
+        {
+            "defaultImage": "https://magicspoon.imgix.net/products/MS_MAPLE-WAFFLE_BYO_FRONT_1-872875_250x300.png?v=1678441687&amp;auto=format,compress",
+            "hoverImage": "https://magicspoon.imgix.net/files/E_3PlhGQ_500x600.png?v=1614182283&amp;auto=format,compress",
+            "name": "MAPLE WAFFLE",
+            "background":"#FFC17B"
+        }
+    ]
+}

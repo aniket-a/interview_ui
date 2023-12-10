@@ -1,15 +1,18 @@
-import React from 'react';
-import './header.css';
+import React, { useContext } from 'react'
+import "./header.scss"
+import { dataContext } from '../../App'
 
-const Navbar = () => {
+const Header = () => {
+    const data = useContext(dataContext);
     
+  return (
+        <div className="offer_box">
+          <ul>
+            <li>✨ FREE Magic Stroon with $65+ Order✨</li>
+            <li>🎁 FREE Cinnamon Roll box with $50+ Order 🎁</li>
+          </ul>
+        </div>
+  );
+}
 
-    return (
-    <>
-        <div className="offer_box"></div>
-        
-    </>
-    );
-};
-
-export default Navbar;
+export default Header

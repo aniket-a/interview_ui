@@ -1,51 +1,52 @@
-import React from 'react'
-import "./footer.scss"
+import React from "react";
+import "./footer.scss";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
-  return (
-    <div className='footer'>
-        <div className="magic_spoon">
-            <div className="heading">
-                  <h1>MAGIC SPOON</h1>
-            </div>
-            <ul className='flinks'>
-                <li>Terms of job</li>
-                <li>Privacy Policy</li>
-                <li>Accessibility policy</li>
-                <li>FAQ</li>
-                <li>Become an Affiliate</li>
-                <li>Reviews</li>
-                <li>Jobs</li>
-                <li>Track Order</li>
-                <li>Store Locator</li>
-                <li>Terms Of Services</li>
-                <li>Refound Policy</li>
-                <li>For Creator</li>
-            </ul>
-            <div className="Contact_container">
-                <button className='cta_contact'>CONTACT US</button>
-                  <div className="icons">
-                      <FaInstagram />
-                      <FaFacebookF />
-                      <FaTwitter />
-                  </div>
-                  
-            </div>
-            <div className="para">
-                  © 2023 Magic Spoon
-            </div>
-        </div>
-        <div className="subscribe_box">
-              <h1>Don't miss the magic:</h1>
-              <div className="subscrib">
-                <input type="text" placeholder='Your email' />
-                <button className='cta_subscribe'>SUBSCRIBE</button>
-              </div>
-        </div>
-    </div>
-  )
-}
 
-export default Footer
+  const links = ["Terms of Use", "Privacy Policy", "Accessibility Policy", "FAQ", "Become an Affiliate", "Reviews", "Jobs", "Track Orders"," Store Locator", "Terms of Service", "Refund policy"," For Creators"]
+
+  return (
+    <>
+    <footer>
+      <div className="footer_container">
+          <div className="left">
+              <div className="logo">
+                <svg fill="white" fontSize={5} class="mobile_hide" role="img" aria-label="Magic Spoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.41 32.57"><g><path d="M36.53.63L29.06 32h6.17l1.52-6.71H47.4L48.92 32h6.17L47.62.63zm1.47 19l3.67-16h.81l3.62 16zM13.23 27.8h-.81L11.19.63H0V32h5.47V3.58h1l1.14 23.88a5.19 5.19 0 005.18 4.94A5.18 5.18 0 0018 27.46l1.1-23.88h1V32h5.47V.63h-11.1zM131.57 32.57A16.28 16.28 0 01122.15 3a16.29 16.29 0 0124.44 7l-5.33 2.26a10.76 10.76 0 00-8.45-6.48A10.54 10.54 0 00123 10.2a10.86 10.86 0 00-.72 11 10.58 10.58 0 009 5.73 10.73 10.73 0 0010-6.55l5.33 2.26a16.49 16.49 0 01-15.04 9.93zM112.89 26.31h-7.78V6.26h7.78V.63H91.43v5.63h7.78v20.05h-7.78v5.63h21.46v-5.63zM87.15 31.65h-5.02V21.9H70.84v-5.56h16.31v15.31z"></path><path d="M70.6 32.54c-4-.15-8.48-2.69-11.16-6A16.29 16.29 0 0163 2.79 16.3 16.3 0 0187.15 10l-5.34 2.26a10.78 10.78 0 00-8.56-6.56 10.54 10.54 0 00-9.83 4.64 10.92 10.92 0 00-.53 11A10.55 10.55 0 0072.05 27a10.25 10.25 0 009.42-6.57l.69.07c.78 4.36-1.69 12.41-11.56 12.04zM183 16.24a16.65 16.65 0 00-7.52-3 27.25 27.25 0 01-3.24-.76 8.15 8.15 0 01-2.06-.92 3 3 0 01-1.1-1.16 3.28 3.28 0 01-.31-1.4 2.88 2.88 0 011.3-2.48 6 6 0 013.53-.92 5.66 5.66 0 014.09 1.39 4.35 4.35 0 011.45 3.27v1.07h5.91V9.66a9.36 9.36 0 00-.74-3.66 8.92 8.92 0 00-2.19-3.09 10.64 10.64 0 00-3.6-2.13 14.5 14.5 0 00-4.91-.78 13.81 13.81 0 00-4.45.67 10.07 10.07 0 00-3.4 1.88 8.61 8.61 0 00-2.19 2.84 8.14 8.14 0 00-.78 3.61v.27a8.73 8.73 0 00.81 3.94 7.41 7.41 0 002.26 2.68 11.92 11.92 0 003.42 1.72 30.34 30.34 0 004.34 1.05 16 16 0 012.95.76 6.21 6.21 0 011.83 1 3.07 3.07 0 01.94 1.25 4 4 0 01.27 1.45 3.58 3.58 0 01-1.3 2.77 5.8 5.8 0 01-4 1.16q-3.45 0-5.08-1.68a6.17 6.17 0 01-1.63-4.5v-1.11h-5.9v1.34a12.42 12.42 0 00.81 4.54 10.25 10.25 0 002.37 3.62 11 11 0 003.91 2.42 15.64 15.64 0 005.44.87 15.46 15.46 0 004.74-.67 10.49 10.49 0 003.6-1.88 8.31 8.31 0 002.26-3 9.72 9.72 0 00.78-4v-.54a7.55 7.55 0 00-2.61-6.22zM209.38 3.47a8.76 8.76 0 00-3-2.06 10.44 10.44 0 00-4.21-.78h-12.63V32h5.91V20.13h6.74a10.17 10.17 0 004.21-.81 8.69 8.69 0 004.77-5.12 10.1 10.1 0 00.6-3.42V9.71a9.6 9.6 0 00-.6-3.33 8.58 8.58 0 00-1.79-2.91zm-3.51 7.18a3.63 3.63 0 01-1.14 2.77 4.34 4.34 0 01-3.11 1.07h-6.16V6.26h6.16a4.38 4.38 0 013.11 1.07 3.64 3.64 0 011.14 2.77zM301.65 27.8H301L296.06.65H284.8V32h5.47V3.58h.82l4.35 24a5.9 5.9 0 005.8 4.84 5.89 5.89 0 005.89-5.89V.63h-5.47V27.8zM230.77 32.57a16.29 16.29 0 1116.28-16.29 16.3 16.3 0 01-16.28 16.29zm0-26.89a10.61 10.61 0 1010.49 10.61 10.56 10.56 0 00-10.49-10.61zM265.52 32.57a16.29 16.29 0 1116.28-16.29 16.3 16.3 0 01-16.28 16.29zm0-26.78A10.49 10.49 0 10276 16.28a10.5 10.5 0 00-10.48-10.49zM314.59.35a3.79 3.79 0 013.82 3.82 3.82 3.82 0 01-7.64 0 3.79 3.79 0 013.82-3.82zm0 .9a2.9 2.9 0 00-2.91 2.92 2.91 2.91 0 105.82 0 2.89 2.89 0 00-2.91-2.92zm-1.59.82h2c.85 0 1.35.47 1.35 1.13a1.1 1.1 0 01-.8 1.09 1 1 0 01.67 1c0 .47 0 .67.22.85v.1h-1a1.75 1.75 0 01-.17-1c0-.53-.23-.73-.7-.73h-.6v1.76H313v-4.2zm1.8 1.7c.35 0 .57-.17.57-.48s-.22-.43-.57-.43h-.9v.92z"></path></g></svg>
+              </div>
+              <div className="links">
+                {
+                links.map((item)=>{
+                  return(
+                    <ul>
+                      <li key={item.id}>{item}</li>
+                    </ul>
+                  )
+                })
+                }
+              </div>
+              <div className="contact_us">
+                <button className="cta_contact">CONTACT US</button>
+                <FaInstagram />
+                <FaFacebookF />
+                <FaTwitter />
+              </div>
+              <div className="p">
+              <span>© 2023 Magic Spoon</span>
+              </div>
+          </div>
+          <div className="right">
+            <h3>Don't miss the magic:</h3>
+            <div className="sunscribe">
+                <input type="email" placeholder="Your email" name="" id="" />
+                <button className="cta_subscribe">SUBSCRIBE</button>
+            </div>
+          </div>
+      </div>
+    </footer>
+    </>
+  );
+};
+
+export default Footer;
