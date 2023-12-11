@@ -1,25 +1,47 @@
 import React from 'react'
 import "./gredient.scss"
 const Gradient = () => {
-    return (
-        <div className='gredient_container'>
-           <div className="gridient_box">
+  return (
+    <div className='gradient_container'>
 
-                <div className="left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias nobis necessitatibus adipisci obcaecati culpa sint delectus distinctio, nemo sit officia quaerat quae dolores rerum exercitationem ad deserunt esse? Vel.
+          <div className="g_box">
+              <img src="https://magicspoon.com/cdn/shop/files/product-nutrients-default-updated_1024x1024.jpg?v=1674089543" alt="" />
+          </div>
+
+        <div className="details">
+            <div className="vitamines1">
+                <div className="protine">
+                      <h1>HIGH PROTEIN</h1>
+                      <p>13g complete protein per serving</p>
                 </div>
+                  <div className="protine">
+                      <h1>KETO-FRIENDLY</h1>
+                      <p>4g-5g net carbs per serving.</p>
+                  </div>
+                  <div className="protine">
+                      <h1>0G SUGAR</h1>
+                      <p>No cane sugar, corn syrup, or sugar alcohols.</p>
+                  </div>
+            </div>
+            <div className="vitamines2">
+                  <div className="protine">
+                      <h1>GLUTEN FREE</h1>
+                      <p>No gluten ingredients.</p>
+                  </div>
+                  <div className="protine">
+                      <h1>GRAIN FREE</h1>
+                      <p>No wheat, rice, or soy.</p>
+                  </div>
+                  <div className="protine">
+                      <h1>NATURAL FLAVORS</h1>
+                      <p>No artificial colors or sweeteners.</p>
+                  </div>
+            </div>
 
-                <div className="center">
-                    <img src="" alt="" />
-                </div>
-
-                <div className="right">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias nobis necessitatibus adipisci obcaecati culpa sint delectus distinctio, nemo sit officia quaerat quae dolores rerum exercitationem ad deserunt esse? Vel.
-                </div>
-
-           </div>
         </div>
-    )
+
+    </div>
+  )
 }
 
 export default Gradient

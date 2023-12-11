@@ -1,35 +1,71 @@
-.gredient_container{
-    background-color: aqua;
+.gradient_container{
+    height: 100vh;
+    background-color: #BFEFFF;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    .gridient_box{
-        max-width: 1200px;
-        border: 2px solid ;
+    position: relative;
+    .g_box{
+        width: 80%;
         height: 80vh;
-        margin: 0 auto;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 80%;
+        }
+    }
+
+    .details{
+        // border: 3px solid ;
+        width: 60%;
+        height: 70vh;
+        position: absolute;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .left{
-            width: 5rem;
-            border: 2px solid ;
-            z-index: 2;
+        .vitamines1{
+            width: 18%;
+            
+            .protine{
+                // border: 2px solid ;
+                margin: 3rem 0;
+                h1{
+                    font-size: 1.9rem;
+                    font-weight: 550;
+                    text-align: center;
+                    color: #3F0791;
+                }
+                p{
+                    text-align: center;
+                    color: #3F0791;
+                    margin-top: 1rem;
+                }
+            }
         }
+        .vitamines2{
+            width: 18%;
 
-        .center{
-            z-index: 1;
+            .protine {
+                    // border: 2px solid;
+                    margin: 2rem 0;
+            
+                    h1 {
+                        font-size: 1.9rem;
+                        font-weight: 550;
+                        text-align: center;
+                        color: #3F0791;
+                    }
+            
+                    p {
+                        margin-top: 1rem;
+                        text-align: center;
+                        color: #3F0791;
+                    }
+                }
         }
-
-        .right{
-            z-index: 2; 
-            width: 5rem;
-            border: 2px solid ;
-        }
-        
     }
 }

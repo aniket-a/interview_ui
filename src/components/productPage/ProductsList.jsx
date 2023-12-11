@@ -29,7 +29,7 @@ const Products = () => {
   };
 
   const getDiscountedPrice = () => {
-    return tab === 1 ? 49 : 29 ;
+    return tab === 1 ? 49 : 29;
   };
 
   const handleCheckboxChange = () => {

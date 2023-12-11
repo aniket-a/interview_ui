@@ -28,17 +28,21 @@
             max-width: 88%;
             margin: 0 auto;
             position: relative;
-            .mountain{
+
+            .mountain {
                 position: absolute;
-                left: 0;bottom: 0;
+                left: 0;
+                bottom: 0;
                 width: 28%;
             }
-            .tree{
+
+            .tree {
                 position: absolute;
-                right: 0;bottom: 0;
+                right: 0;
+                bottom: 0;
                 width: 12%;
             }
-            
+
         }
 
         .build_box {
@@ -111,29 +115,33 @@
             }
         }
 
-        .price_list{
+        .price_list {
             margin-top: 1rem;
             color: #3F0791;
-            
-            .base_pricing{
+
+            .base_pricing {
                 font-size: 32px;
                 color: #3F0791;
                 font-weight: 500;
             }
-            .pricing_div{
+
+            .pricing_div {
                 margin-top: 1rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                input{
+
+                input {
                     margin-right: 0.5rem;
                     border-radius: 50%;
-                    :checked{
+
+                    :checked {
                         background-color: #3F0791;
                         color: white;
                     }
                 }
-                label{
+
+                label {
                     border-bottom: 1px solid #3F0791;
                     line-height: 1rem;
                     font-size: 0.8rem;
@@ -141,7 +149,7 @@
             }
         }
 
-        .pricing{
+        .pricing {
             font-size: 32px;
             font-weight: 550;
             line-height: 1.2;

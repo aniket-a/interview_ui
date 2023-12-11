@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import "./header.scss"
 import { dataContext } from '../../App'
+import Navbar from './navbar/Navbar';
 
 const Header = () => {
     const data = useContext(dataContext);
@@ -14,9 +15,7 @@ const Header = () => {
         </ul>
       </div>
 
-      <nav>
-        
-      </nav>
+        <Navbar />
         </>
   );
 }
