@@ -15,9 +15,9 @@ const Singleproduct = ({ item }) => {
     setisHover(false)
   }
 
-  const cartStyle={
-    backgroundColor: isHover ? item.color : '', 
-  }
+  const cartStyle = {
+    backgroundColor: isHover ? item.background : "",
+  };
 
   const handleAddtoCart = (item)=>{
     setcart((prevState)=>{

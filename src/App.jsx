@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer"
 import Gradient from './components/gradient/Gradient'
 import { createContext} from 'react'
 import Products from './components/productPage/ProductsList'
+import Chart from './components/chart/Chart'
 export const dataContext = createContext();
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Header />
         <Products />
         <Gradient />
+        <Chart />
         <Footer />
       </div>
     </dataContext.Provider>
