@@ -1,29 +1,45 @@
+@import "../../css-config/mixins.scss";
+
 .main_product_container {
-    height: 100vh;
+    flex-direction: column;
     background-color: #DAD9FF;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+    
+    @include md {
+        
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        z-index: 999;
+    }
 
     .product_list {
         height: 90vh;
-        width: 70%;
+        width: 100%;
         overflow: scroll;
         display: flex;
         justify-content: start;
         align-items: center;
         flex-wrap: wrap;
 
+        @include md{
+            width: 70%;
+        }
+
         .productListing_Box {}
     }
 
     .cart_frame {
         height: 90vh;
-        width: 50%;
+        width: 100%;
         text-align: center;
 
+        @include md{
+            width: 50%;
+        }
+
+        // border: 2px solid ;
         .img {
             max-width: 88%;
             margin: 0 auto;
@@ -130,6 +146,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
 
                 input {
                     margin-right: 0.5rem;
@@ -145,6 +162,23 @@
                     border-bottom: 1px solid #3F0791;
                     line-height: 1rem;
                     font-size: 0.8rem;
+                    font-size: 1.1rem;
+                    font-weight: 540;
+                    cursor: pointer;
+                }
+
+                .pick_box {
+                    margin-top: 1rem;
+
+                    button {
+                        padding: 0.8rem 8rem;
+                        color: #3F0791;
+                        background-color: white;
+                        font-weight: 550;
+                        cursor: pointer;
+                        border-radius: 3rem;
+                        border: 2.5px solid #3F0791;
+                    }
                 }
             }
         }

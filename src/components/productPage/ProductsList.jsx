@@ -89,10 +89,13 @@ const Products = () => {
             ${checkboxChange ? getDiscountedPrice() : getBasePrice()}
           </div>
           <div className="pricing_div">
-            <input type="checkbox" id="checkbox" />
-            <label htmlFor="checkbox" onClick={handleCheckboxChange}>
-              SUBSCRIBE & SAVE
-            </label>
+              <div className="">
+                <input type="checkbox" id="checkbox" />
+                <label htmlFor="checkbox" onClick={handleCheckboxChange}>SUBSCRIBE & SAVE</label>
+              </div>
+            <div className="pick_box">
+              <button>PICK 4 MORE BOXES</button>
+            </div>
           </div>
         </div>
       </div>

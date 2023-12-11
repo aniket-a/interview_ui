@@ -17,12 +17,12 @@ const Footer = () => {
               </div>
               <div className="links">
                 {
-                links.map((item)=>{
-                  return(
+                links.map((item, index)=>{
+                  return (
                     <ul>
-                      <li key={item.id}>{item}</li>
+                      <li key={index}>{item}</li>
                     </ul>
-                  )
+                  );
                 })
                 }
               </div>
@@ -44,6 +44,8 @@ const Footer = () => {
             </div>
           </div>
       </div>
+
+      
     </footer>
     </>
   );
