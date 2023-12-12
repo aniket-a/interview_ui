@@ -10,24 +10,45 @@ footer{
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+
+        @include md{
+            flex-direction: row;
+        }
         
         .left {
-                width: 50%;
-                border: 2px solid;
+                width: 100%;
+                padding: 1rem 0;
+                @include md{
+                    width: 50%;
+                }
         
                 .logo {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include md{
+                            justify-content: start;
+                        }
                     svg{
                         margin-bottom: 1rem;
-                        width: 25rem;
+                        width: 20rem;
+                        @include md{
+                            width: 25rem;
+                        }
                     }
                 }
         
                 .links {
                     display: flex;
-                    justify-content: start;
+                    justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
                     max-width: 400px;
+                    @include md{
+                        justify-content: start;
+                    }
         
                     ul {
                         margin-bottom: 1rem;
@@ -48,6 +69,10 @@ footer{
                     display: flex;
                     justify-content: start;
                     align-items: center;
+                    flex-direction: column;
+                    @include md{
+                        flex-direction: row;
+                    }
                     .cta_contact{
                         padding: 1rem 2.5rem;
                         border-radius: 3rem;
@@ -57,16 +82,34 @@ footer{
                         font-size: 2.2rem;
                         margin: 0 1rem;
                     }
+
+                    .svg_icon{
+                        margin: 1rem 0;
+                    }
                 }
                 .p{
                     color: grey;
                     margin-top: 1rem;
+                    // border: 2px solid white;
+                    text-align: center;
+                    padding: 0.5rem 0;
+                    @include md{
+                        text-align: start;
+                    }
                 }
             }
         
         .right {
-                width: 50%;
-                margin-left: 10rem;
+                width: 100%;
+                margin-left: 0rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // border:  2px solid white;
+                @include md{
+                    margin-left: 10rem;
+                }
                 h3{
                     color: white;
                     font-size: 1rem;

@@ -15,7 +15,7 @@ const App = () => {
   return (
     <dataContext.Provider value={initialValue}>
       <div>
-        <Header /> 
+        <Header />
         <Products />
         <Gradient />
         <Chart />
