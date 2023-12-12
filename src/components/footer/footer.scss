@@ -121,7 +121,7 @@ footer{
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-
+                    // border: 2px solid white;
                     @include md{
                         flex-direction: row;
                     }
@@ -143,7 +143,8 @@ footer{
                         }
                     
                         .cta_subscribe {
-                            padding: 0.9rem 4.2rem;
+                            width: 100%;
+                            padding: 1rem 0;
                             margin: 0.8rem 0;
                             background-color: transparent;
                             color: white;
