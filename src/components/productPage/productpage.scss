@@ -63,6 +63,16 @@
                             position: relative;
                             width: 40%;
                             display: flex;
+
+                            svg{
+                                z-index: 999;
+                                position: absolute;
+                                left: 2.4rem;
+                                font-size: 2rem;
+                                top: -0.9rem;
+                                color: #3F0791;
+                                cursor: pointer;
+                            }
             
                             img {
                                 position: absolute;
@@ -72,27 +82,40 @@
                             }
             
                             img:first-child {
-                                z-index: 4;
+                                z-index: 6;
                             }
             
                             img:nth-child(2) {
-                                z-index: 3;
+                                z-index: 5;
                             }
                             img:nth-child(3) {
-                                z-index: 2;
+                                z-index: 4;
                             }
                             img:nth-child(4) {
+                                z-index: 3;
+                            }
+                            img:nth-child(5) {
+                                z-index: 2;
+                            }
+                            img:nth-child(6) {
                                 z-index: 1;
                             }
                         }
                         .product_img_cart:nth-child(2){
                                 margin-top: 0.6rem;
+                                
                         }
                         .product_img_cart:nth-child(3) {
                             margin-top: 1.5rem;
                         }
                         .product_img_cart:nth-child(4){
                             margin-top: 1.8rem;
+                        }
+                        .product_img_cart:nth-child(5) {
+                            margin-top: 2.2rem;
+                        }
+                        .product_img_cart:nth-child(6) {
+                            margin-top: 2.6rem;
                         }
 
             .mountain {

@@ -3,11 +3,11 @@ import "./productpage.scss";
 import productList from "../../data/productList.json";
 import Singleproduct from './Singleproduct';
 import { dataContext } from '../../App';
-
+import { IoMdCloseCircle } from "react-icons/io";
 
 const Products = () => {
 
-  const {Cart} = useContext(dataContext)
+  const { Cart, setCart, removeCart } = useContext(dataContext)
 
   const packs = ["4 pack", "6 pack"];
   const [tab, setTab] = useState(0);
@@ -44,26 +44,35 @@ const Products = () => {
     setCheckboxChange(!checkboxChange);
   };
 
+  const handleFilterProducts = (index) => {
+    Cart.cart.filter((ele, _index) => setCart(ele.id !== index));
+    
+  };
+
+
+
   return (
     <div className="main_product_container">
 
       <div className="product_list">
-        {productList.productListing.map((item, index) => (
+        {productList.productListing && productList.productListing.map((item, index) => (
           <div className="productListing_Box" key={index}>
             <Singleproduct
               item={item}
             />
           </div>
         ))}
+
       </div>
 
       <div className="cart_frame">
         <div className="img">
           <div className="product_cart_box">
             {
-              Cart.cart.map((item)=>{
+              Cart.cart.map((item, index)=>{
                 return(
-                  <div className="product_img_cart">
+                  <div className="product_img_cart" key={index}>  
+                    <IoMdCloseCircle onClick={() => removeCart(index)}/>
                     <img src={item.defaultImage} alt="" />
                   </div>
                 )

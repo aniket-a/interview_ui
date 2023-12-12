@@ -15,11 +15,23 @@ const App = () => {
   const addToCart = (item) => {
     setCart((prevState) => {
       return { ...prevState, cart: [...prevState.cart, item] };
+      
     });
   };
 
+  const removeCart = (index) => {
+    setCart((prevState) => {
+      const updatedCart = [...prevState.cart];
+      updatedCart.splice(index, 1);
+      return { ...prevState, cart: updatedCart };
+    });
+  };
+
+
+
+
   return (
-    <dataContext.Provider value={{ Cart, addToCart }}>
+    <dataContext.Provider value={{ Cart, setCart, addToCart, removeCart }}>
       <div>
         <Header />
         <Products />

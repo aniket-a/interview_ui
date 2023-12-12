@@ -8,7 +8,6 @@ const Singleproduct = ({ item }) => {
 
   const [isHover, setisHover] = useState(false);
 
-
   function handleMouseOver() {
     setisHover(true);
   }
