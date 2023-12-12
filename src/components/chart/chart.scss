@@ -1,14 +1,37 @@
+@import "../../css-config/mixins.scss";
 .chart_container{
     // height: 150vh;
     background-color: #DAD9FF;
     display: flex;
     align-items: center;
+    flex-direction: column;
     position: relative;
+    padding: 0rem;
+
+    @include md{
+        flex-direction: row;
+        padding: 2rem 0;
+    }
+
     .left{
-
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        @include md{
+            justify-content: start;
+        }
+        
         svg{
-            width: 48%;
-
+            width: 14%;
+            
+            transform: rotate(90deg);
+            @include md{
+                transform: rotate(0deg);
+                justify-content: start;
+                width: 46%;
+            }
         }
     }
     .center{
@@ -19,7 +42,11 @@
             color: #3F0790;
             font-weight: 550;
         }
-        width: 60%;
+        width: 70%;
+        padding: 2rem 0;
+        @include md{
+            width: 60%;
+        }
         img{
             width: 100%;
         }
@@ -36,9 +63,13 @@
     .right{
         width: 20%;
         // border: 2px solid ;
+        display: none;
         position: absolute;
         right: 0;
         top: -6rem;
+        @include md{
+            display: block;
+        }
 
         .rotate_icon{
         img {

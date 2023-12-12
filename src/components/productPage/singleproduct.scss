@@ -1,12 +1,19 @@
+@import "../../css-config/mixins.scss";
+
 .card{
-    width: 180px;
-    margin:0rem 0.5rem ;
+    width: 190px;
+    margin:0rem auto ;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 1.5rem 0;
     position: relative;
+    
+    @include md{
+        width: 180px;
+    }
+
     .img{
         img{
             width: 100%;
@@ -17,17 +24,30 @@
             top: 0.5rem;
             left: 0.5rem;
         }
+        
     }
+
+        .name {
+            font-size: 0.5rem;
+    
+            @include md {
+                font-size: 1.1rem;
+            }
+        }
 
     .cta_add{
         color: #fff;
         background: #3f0791;
         box-shadow: none;
-        padding: 0.7rem 50px;
+        padding: 0.3rem 25px;
         border-radius: 3rem;
         outline: none;
         border: none;
         margin: 0.5rem 0;
         cursor: pointer;
+
+        @include md{
+            padding: 0.7rem 50px;
+        }
     }
 }

@@ -72,6 +72,7 @@ const Chart = () => {
           </svg>
         </div>
       </div>
+
       <div className="center">
         <h1>How do we stack up to the “classics”?</h1>
         <img
@@ -86,6 +87,7 @@ const Chart = () => {
           JANUARY 2023.
         </div>
       </div>
+      
       <div className="right">
         <div className="rotate_icon">
           <img src={gradientImg} alt="" />
