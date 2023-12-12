@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import "./productpage.scss";
 import productList from "../../data/productList.json";
 import Singleproduct from './Singleproduct';
+import { dataContext } from '../../App';
+
 
 const Products = () => {
+
+  const {Cart} = useContext(dataContext)
+
   const packs = ["4 pack", "6 pack"];
   const [tab, setTab] = useState(0);
   const [checkboxChange, setCheckboxChange] = useState(false);
@@ -11,6 +16,9 @@ const Products = () => {
   function handleTab(index) {
     setTab(index);
   }
+
+  console.log(Cart)
+  
 
   const mountain = tab === 1
     ? "https://magicspoon.com/cdn/shop/t/534/assets/MS_BYO_mountain.svg?v=150050071060029369861695836138"
@@ -38,6 +46,7 @@ const Products = () => {
 
   return (
     <div className="main_product_container">
+
       <div className="product_list">
         {productList.productListing.map((item, index) => (
           <div className="productListing_Box" key={index}>
@@ -47,8 +56,20 @@ const Products = () => {
           </div>
         ))}
       </div>
+
       <div className="cart_frame">
         <div className="img">
+          <div className="product_cart_box">
+            {
+              Cart.cart.map((item)=>{
+                return(
+                  <div className="product_img_cart">
+                    <img src={item.defaultImage} alt="" />
+                  </div>
+                )
+              })
+            }
+          </div>
           <img src={imageUrl} alt="" />
           <img className="mountain" src={mountain} alt="" />
           <img className="tree" src={tree} alt="" />
@@ -99,6 +120,7 @@ const Products = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

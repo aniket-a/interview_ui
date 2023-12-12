@@ -31,11 +31,12 @@
     }
 
     .cart_frame {
-        height: 90vh;
+        height: 50vh;
         width: 100%;
         text-align: center;
 
         @include md {
+            height: 90vh;
             width: 50%;
         }
 
@@ -43,12 +44,63 @@
             max-width: 88%;
             margin: 0 auto;
             position: relative;
+            display: none;
+
+            @include md{
+                display: block;
+            }
+
+                        .product_cart_box {
+                            // border: 2px solid black;
+                            height: 30vh;
+                            width: 77%;
+                            position: absolute;
+                            top: 0.4rem;
+                            display: flex;
+                        }
+            
+                        .product_img_cart {
+                            position: relative;
+                            width: 40%;
+                            display: flex;
+            
+                            img {
+                                position: absolute;
+                                margin-left: 0.5rem;
+                                height: 218px;
+                                width: 220px;
+                            }
+            
+                            img:first-child {
+                                z-index: 4;
+                            }
+            
+                            img:nth-child(2) {
+                                z-index: 3;
+                            }
+                            img:nth-child(3) {
+                                z-index: 2;
+                            }
+                            img:nth-child(4) {
+                                z-index: 1;
+                            }
+                        }
+                        .product_img_cart:nth-child(2){
+                                margin-top: 0.6rem;
+                        }
+                        .product_img_cart:nth-child(3) {
+                            margin-top: 1.5rem;
+                        }
+                        .product_img_cart:nth-child(4){
+                            margin-top: 1.8rem;
+                        }
 
             .mountain {
                 position: absolute;
                 left: 0;
                 bottom: 0;
                 width: 28%;
+                z-index: 999;
             }
 
             .tree {
@@ -56,6 +108,7 @@
                 right: 0;
                 bottom: 0;
                 width: 12%;
+                z-index: 999;
             }
         }
 

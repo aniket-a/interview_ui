@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./singleproduct.scss";
+import { dataContext } from "../../App";
+
 
 const Singleproduct = ({ item }) => {
-  const [cart, setcart] = useState({
-    cart: [],
-  });
+  const { Cart, addToCart } = useContext(dataContext); 
+
   const [isHover, setisHover] = useState(false);
+
 
   function handleMouseOver() {
     setisHover(true);
@@ -19,15 +21,8 @@ const Singleproduct = ({ item }) => {
     backgroundColor: isHover ? item.background : "",
   };
 
-  const handleAddtoCart = (item) => {
-    setcart((prevState) => {
-      return { ...prevState, cart: [...prevState.cart, item] };
-    });
-  };
-
   return (
     <div className="card" style={cartStyle}>
-    
       <div className="img">
         <img className="offericone" src={item.offerIcon} alt="" />
         <img
@@ -41,7 +36,7 @@ const Singleproduct = ({ item }) => {
       <div className="name" style={{ color: "#5B00ED" }}>
         {item.name}
       </div>
-      <button className="cta_add" onClick={() => handleAddtoCart(item)}>
+      <button className="cta_add" onClick={() => addToCart(item)}>
         ADD
       </button>
     </div>
